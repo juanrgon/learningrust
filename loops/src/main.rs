@@ -1,15 +1,9 @@
 fn main() {
-    // infinite loop
     infinite_loop();
-
-    // returning a value from a loop
     value_from_loop();
-
-    // while loop
     while_loop();
-
-    // for loop
     for_loop();
+    reverse_for_loop();
 }
 
 fn infinite_loop() {
@@ -47,4 +41,11 @@ fn for_loop() {
     for element in a.iter() {
         println!("the value is: {}", element);
     }
+}
+
+fn reverse_for_loop() {
+    for number in (1..11).rev() {
+        println!("{}!", number);
+    }
+    println!("HAPPY NEW YEAR!!!");
 }
